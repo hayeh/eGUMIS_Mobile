@@ -16,6 +16,7 @@ class AuditTrailController extends Controller
     public function index()
     {
         //
+        return response()->json(AuditTrail::all());
     }
 
     /**

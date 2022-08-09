@@ -15,7 +15,7 @@ class PelaporanController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(Pelaporan::all());
     }
 
     /**
@@ -26,6 +26,7 @@ class PelaporanController extends Controller
     public function create()
     {
         //
+        return response()->json(Pelaporan::all());
     }
 
     /**
@@ -82,5 +83,6 @@ class PelaporanController extends Controller
     public function destroy(Pelaporan $pelaporan)
     {
         //
+        return response()->json(Pelaporan::all());
     }
 }
